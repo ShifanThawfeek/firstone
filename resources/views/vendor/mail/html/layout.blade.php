@@ -32,9 +32,18 @@ width: 100% !important;
 {{ $header ?? '' }}
 
 <!-- Email Body -->
+
+
+
+
 <tr>
 <td class="body" width="100%" cellpadding="0" cellspacing="0">
 <table class="inner-body" align="center" width="570" cellpadding="0" cellspacing="0" role="presentation">
+
+
+<img width="600" src="{{ url('/assets/images/email_images/hello.png')}}">
+
+
 <!-- Body content -->
 <tr>
 <td class="content-cell">

@@ -4,8 +4,8 @@
             <v-flex xs11 md4 lg6 xl4>
                 <div id="form">
                     <p class="cyan--text accent-3 text-center text-md-h4 text-sm-h5 text-h5" style="font-family: 'Rubik'!important">Student Benefit Program</p>
-                    <p>Kindly fill up the form below📱<br>*The verification process may take up to 24 Hours.<br>
-                     The name and photo associated with your Google account will be recorded when you upload files and submit this form.</p>
+                    <!-- <p>Kindly fill up the form below📱<br>*The verification process may take up to 24 Hours.<br>
+                     The name and photo associated with your Google account will be recorded when you upload files and submit this form.</p> -->
                     <v-alert type="info" indeterminate border="left" v-if="loading">Processing ...</v-alert>
 
                     <v-form v-model="valid" ref="form">

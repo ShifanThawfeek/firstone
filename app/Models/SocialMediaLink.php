@@ -20,7 +20,9 @@ class SocialMediaLink extends Model
         'telegram',
         'paypal',
         'tiktok',
-        'line'
+        'line',
+        'gmail',
+        'whatsapp'
     ];
 
     public function user()

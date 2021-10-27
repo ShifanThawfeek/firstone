@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="{{  url('css/landing.css') }}">
 
     <!-- Favicon -->
-    <link rel="icon" href="{{ url('assets/images/favicon.png') }}" />
+    <link rel="icon" href="{{ url('favicon.ico') }}" />
 
     <style>
         #form {
@@ -53,7 +53,7 @@
                         <a class="nav-link" href="/features#pricing">Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Help</a>
+                        <a class="nav-link" href="/help">Help</a>
                     </li>
                 </ul>
                 <form class="ml-auto">

@@ -12,6 +12,7 @@ class UserController extends Controller
     {
         $file = $request->photo;
         // Name the file
+        // die($request->photo->extension());
         $name = Str::random(20) . uniqid('', true) . Str::random(20) . '.' . $request->photo->extension();
         // Upload the file
         $path = Storage::putFileAs('public/profiles', $file, $name);

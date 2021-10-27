@@ -18,9 +18,9 @@
                     <p class="text-h6 dark-gray">
                         <v-icon class="cyan--text accent-3">mdi-check</v-icon> Profile image & Bio text
                     </p>
-                    <p class="text-h6 dark-gray">
+                    <!-- <p class="text-h6 dark-gray">
                         <v-icon class="cyan--text accent-3">mdi-check</v-icon> Analytics
-                    </p>
+                    </p> -->
                 </v-card-text>
             </v-card>
         </v-flex>

@@ -24,7 +24,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Favicon -->
-    <link rel="icon" href="{{ url('assets/images/favicon.png') }}" />
+    <link rel="icon" href="{{ url('favicon.ico') }}" />
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@100;200;300;400;500;600;700;800&display=swap');

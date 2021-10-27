@@ -39,7 +39,8 @@ class SubscriptionController extends Controller
         if ($request->type == "student") {
             $request->user()->newSubscription
             ('PREMIUM', env('PREMIUM_PRICE'))
-            ->withCoupon('bZSYFQOg')
+            // ->withCoupon('bZSYFQOg')
+            ->withCoupon('rT8r8ddB')
             ->create($paymentMethod, ['email' => $user->email]);
         } else {
             $request->user()->newSubscription
@@ -56,11 +57,34 @@ class SubscriptionController extends Controller
             'title' => 'Title goes here',
             'content' => 'Content goes here'
         ];
-        Mail::send('emails.test', $data, function ($message) {
-            $email = Auth::user()->email;
-            $name = Auth::user()->name;
-            $message->to($email, $name)->subject('Welcome to Mataonme');
-        });
+
+        // One year free coupon code - Email notification
+        if($request->coupon == env('ONEYEARFREEE_COUPON') ){
+            Mail::send('emails.coupon_applied', $data, function ($message) {
+                $email = Auth::user()->email;
+                $name = Auth::user()->name;
+                $message->to($email, $name)->subject('Welcome to Mataonme');
+            });
+        }
+
+                // RM 9.90 for students - Email notification
+                elseif ('rT8r8ddB') {
+                    # code...
+                    Mail::send('emails.student_purchase', $data, function ($message) {
+                        $email = Auth::user()->email;
+                        $name = Auth::user()->name;
+                        $message->to($email, $name)->subject('Welcome to Mataonme');
+                    });
+                }
+        
+        // Premium RM 18 Subscription - Email notification
+        else{
+            Mail::send('emails.test', $data, function ($message) {
+                $email = Auth::user()->email;
+                $name = Auth::user()->name;
+                $message->to($email, $name)->subject('Welcome to Mataonme');
+            });
+        }
 
         return response()->json(['subscribed' => true]);
     }

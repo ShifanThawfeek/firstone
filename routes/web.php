@@ -37,6 +37,15 @@ Auth::routes(['verify' => true]);
 
 // Public Analytics (Privates one are on the group below)
 Route::view('/features', 'public.features');
+Route::view('/help', 'public.help');
+
+Route::view('getting_started', 'public.getting_started');
+Route::view('how_to_create', 'public.how_to_create');
+Route::view('verifying_your_account', 'public.verifying_your_account');
+Route::view('how_to_create_link', 'public.how_to_create_link');
+Route::view('sharing_mataonme', 'public.sharing_mataonme');
+Route::view('be_a_part_of_community', 'public.be_a_part_of_community');
+
 Route::put('/clicks/add', [LinkPageController::class, 'analytic']);
 Route::put('/views/add', [LinkPageController::class, 'countViews']);
 
@@ -57,20 +66,12 @@ Route::group(['middleware' => ['auth', 'checkSubscription']], function () {
     Route::put('/customization', [CustomizationController::class, 'update']);
     Route::put('/change/background', [CustomizationController::class, 'changeTheme']);
 
-
-
-
     // shifan add start
     Route::get('students', [StudentController::class, 'index']);
     Route::post('/student-register', [StudentController::class, 'insert']);
     Route::get('list', [StudentController::class, 'list']);
     Route::view('/about', 'auth.StudentForm')->name('about');
     // shifan add end
-
-
-
-
-
 
     // Private Analytics
     Route::post('/analytics/analytic', [AnalyticsController::class, 'analytic']);

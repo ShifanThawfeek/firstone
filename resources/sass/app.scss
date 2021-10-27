@@ -11,3 +11,201 @@
 @import "https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css";
 @import "https://fonts.googleapis.com/css?family=Material+Icons";
 @import '~vuetify/dist/vuetify.css';
+@import "https://use.fontawesome.com/releases/v5.8.1/css/all.css";
+
+.v-btn__content {
+    align-items: center;
+    // color: inherit;
+    // display: flex;
+    // flex: 1 0 auto;
+    justify-content: inherit;
+    line-height: normal;
+    position: relative;
+    // transition: inherit;
+    // transition-property: opacity;
+    max-width: 250px;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: initial;
+}
+
+
+// When the width of this document is 1024 pixels or more, follow these
+@media only screen and (min-width: 1024px) {
+    .v-btn__content {
+        align-items: center;
+        color: inherit;
+        justify-content: inherit;
+        line-height: normal;
+        position: relative;
+        transition: inherit;
+        transition-property: opacity;
+        max-width: 722px;
+        display: inline-block;
+        white-space: normal;
+    }
+
+
+    .zoom {
+        // padding: 50px;
+        // background-color: green;
+        transition: transform .2s; /* Animation */
+        // width: 200px;
+        // height: 200px;
+        // margin: 0 auto;
+      }
+    
+      .zoom:hover {
+        transform: scale(1.5); /* (150% zoom)*/
+      }
+    
+
+
+      .container {
+        width: 100%;
+        /* padding: 12px; */
+        padding-top: 24px;
+        padding-right: 12px;
+        padding-bottom: 24px;
+        padding-left: 12px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+
+  }
+
+
+
+  .container--fluid {
+    max-width: 100%;
+    position: absolute;
+}
+
+
+
+
+.visible-scrollbar, .invisible-scrollbar, .mostly-customized-scrollbar {
+  // display: block;
+  width: 45em;
+  overflow: auto;
+  height: 45em;
+}
+
+.invisible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Demonstrate a "mostly customized" scrollbar
+ * (won't be visible otherwise if width/height is specified) */
+.mostly-customized-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: #aaa; /* or add it to the track */
+}
+
+
+
+/* Add a thumb */
+.mostly-customized-scrollbar::-webkit-scrollbar-thumb {
+    background: #000;
+}
+
+
+// @media only screen 
+//     and (device-width : 375px) 
+//     and (device-height : 812px) 
+//     and (-webkit-device-pixel-ratio : 3) {
+//       .visible-scrollbar, .invisible-scrollbar, .mostly-customized-scrollbar {
+//         display: block;
+//         width: 20em;
+//         overflow: auto;
+//         height: 35em;
+//       }
+//      }
+
+
+@media screen and (max-width: 1264px) {
+  .title_message {
+    display: none;
+  }
+}
+
+// .container--fluid {
+//   max-width: 100%;
+//   position: absolute;
+//   margin: 20px;
+// }
+@media screen and (min-width: 1024px) {
+.v-application--is-ltr .v-list.v-sheet--shaped{
+  position: fixed;
+}
+}
+/*
+@media screen and (max-width: 768px) {
+  
+  .v-application .px-5{margin-top: 40px;}
+  .v-application--is-ltr .v-list.v-sheet--shaped{
+    z-index: 1;
+    position: fixed;
+    height: 50px;
+    top: 0;
+    margin-top: 60px;
+   
+  }
+  .v-application .cyan--text.text--accent-3{
+    background-color: #fff;
+  }
+}
+*/
+
+.v-avatar{
+  margin-top: 40px !important;
+}
+
+.v-application .my-3{
+  margin: 12px 0px;
+  background-color: transparent !important;
+  border: none !important;
+
+}
+
+.main-btn .my-3 .v-btn .v-btn--block .v-btn--has-bg .theme--light .elevation-0 .v-size--large{
+  color: #000 !important;
+}
+.v-application .my-3:hover{
+  transform: scale(1.05);
+}
+.v-btn__content{
+  color: black;
+  max-width: 400px;
+
+}
+.theme--light.v-btn:hover:before{
+  max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent !important;
+ 
+  }
+.v-btn:before{
+  max-width: 400px;
+  margin-left: auto;
+    margin-right: auto;
+   background-color: transparent !important;
+}
+@media screen and (max-width: 425px) {
+  .theme--light.v-btn:hover:before{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+.v-btn__content{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(23, 216, 226);
+    padding: 10px;
+}

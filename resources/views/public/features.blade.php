@@ -2,70 +2,70 @@
 
 @section('content')
 <!-- First Feature -->
-    <div class="container-fluid hero">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6" style="display: flex;justify-content: center">
-                
-                </div>
-                <div class="col-md-6 my-auto">
-                    <p class="feature-text">Combine scattered information into one</p>
-                    <p class="text-muted h4">
-                        Display multiple links and accounts <br> at once on {{ $website->name }}
-                    </p>
-                    <!-- <a href="{{ route('register') }}" class="btn btn-login" type="submit">Try for FREE</a> -->
-                </div>
-            </div>
-        </div>
+<div class="container-fluid hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6" style="display: flex;justify-content: center">
+        <img src="{{ url('assets/images/ta.png') }}" class="img-fluid feature-image" alt="Mata on me">
+      </div>
+      <div class="col-md-6 my-auto">
+        <p class="feature-text">Combine scattered information into one</p>
+        <p class="text-muted h4">
+          Display multiple links and accounts <br> at once on {{ $website->name }}
+        </p>
+        <!-- <a href="{{ route('register') }}" class="btn btn-login" type="submit">Try for FREE</a> -->
+      </div>
     </div>
-    <!-- / First Feature -->
+  </div>
+</div>
+<!-- / First Feature -->
 
-    <!--<hr>-->
-    <!-- Second Feature -->
-    <div class="container-fluid hero">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6" style="display: flex;justify-content: center">
-                    <img src="{{ url('assets/images/feature-2.png') }}" class="img-fluid feature-image" alt="Mata on me">
-                </div>
-                <div class="col-md-6 my-auto">
-                    <p class="feature-text">Connected anytime anywhere</p>
-                    <p class="text-muted h4">
-                        From website, social accounts to blog posts. All eyes on you in one landing page!
-                    </p>
-                    <!-- <a href="{{ route('register') }}" class="btn btn-login" type="submit">Try for FREE</a> -->
-                </div>
-            </div>
-        </div>
+<!--<hr>-->
+<!-- Second Feature -->
+<div class="container-fluid hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6" style="display: flex;justify-content: center">
+        <img src="{{ url('assets/images/feature-1.png') }}" class="img-fluid feature-image" alt="Mata on me">
+      </div>
+      <div class="col-md-6 my-auto">
+        <p class="feature-text">Connected anytime anywhere</p>
+        <p class="text-muted h4">
+          From website, social accounts to blog posts. All eyes on you in one landing page!
+        </p>
+        <!-- <a href="{{ route('register') }}" class="btn btn-login" type="submit">Try for FREE</a> -->
+      </div>
     </div>
-    <!-- / Second Feature -->
+  </div>
+</div>
+<!-- / Second Feature -->
 
-    <!--<hr>-->
-    <!-- Third Feature -->
-    <div class="container-fluid hero">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6" style="display: flex;justify-content: center">
-                    <img src="{{ url('assets/images/feature-3.png') }}" class="img-fluid feature-image" alt="Mata on me">
-                </div>
-                <div class="col-md-6 my-auto">
-                    <p class="feature-text">Simple usage</p>
-                    <p class="text-muted h4">
-                        An easy-to-use screen that can be registered in 5 minutes.
-                        In the professional version, access analysis such as the
-                        number of visits for each link is possible
-                    </p>
-                    <!-- <a href="{{ route('register') }}" class="btn btn-login" type="submit">Try for FREE</a> -->
-                </div>
-            </div>
-        </div>
+<!--<hr>-->
+<!-- Third Feature -->
+<div class="container-fluid hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6" style="display: flex;justify-content: center">
+        <img src="{{ url('assets/images/feature-3.png') }}" class="img-fluid feature-image" alt="Mata on me">
+      </div>
+      <div class="col-md-6 my-auto">
+        <p class="feature-text">Simple usage</p>
+        <p class="text-muted h4">
+          An easy-to-use screen that can be registered in 5 minutes.
+          In the professional version, access analysis such as the
+          number of visits for each link is possible
+        </p>
+        <!-- <a href="{{ route('register') }}" class="btn btn-login" type="submit">Try for FREE</a> -->
+      </div>
     </div>
-    <!-- / Third Feature -->
+  </div>
+</div>
+<!-- / Third Feature -->
 
-    <!--<hr>-->
+<!--<hr>-->
 
-    <!-- Pricing -->
-    <!-- <div class="container-fluid padded" id="pricing">
+<!-- Pricing -->
+<!-- <div class="container-fluid padded" id="pricing">
         <div class="container">
             <p class="text-center feature-text">Monthly subcription plan</p>
             <div class="row justify-content-center">
@@ -119,9 +119,9 @@
         </div>
     </div> -->
 
-    <!-- / Pricing -->
-    <hr class="my-5" id="pricing">
-    <!-- Students Benefit Program -->
+<!-- / Pricing -->
+<hr class="my-5" id="pricing">
+<!-- Students Benefit Program -->
 <!--     <div class="container-fluid">
         <div class="container">
             <p class="h1 text-center main-color mb-5">Student Benefit Program</p>
@@ -162,166 +162,212 @@
 
 
 
-    <div class="container">
+<div class="container">
 
-    <div class="title-tag-line"><b></b><span>Monthly subcription plan</span><b></b><a href="#targetDiv" class="topic-price">I'm a Student!</a></div>
-    <div class="table-wrap tb-price">
-      <table class="table table-striped">
-        <!-- <thead>
+  <div class="title-tag-line"><b></b><span>Monthly subscription plan</span><b></b><a href="#targetDiv" class="topic-price">I'm a Student!</a></div>
+  <div class="table-wrap tb-price">
+    <table class="table table-striped">
+      <!-- <thead>
           <tr>
             <th></th>
             <th>Pro version</br>RM 18.00 / Month</th>
             <th>Free version</br>RM 00 / Month</th>
           </tr>
         </thead> -->
-        <tbody>
-          <tr>
-            <td></td>
-            <td class="col-tb-sec"><b>Pro version</b></br>RM 18.00 / Month</td>
-            <td class="col-tb-sec"><b>Free version</b></br>RM 00 / Month</td>
-          </tr>
-          <tr>
-            <td>Page creation</td>
-            <td class="col-tb-sec"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
-            <td class="col-tb-sec"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
-          </tr>
-          
-          <tr>
-            <td>Change profile picture</td>
-            <td class="col-tb-sec"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
-            <td class="col-tb-sec"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
-          </tr>
+      <tbody>
+        <tr>
+          <td></td>
+          <td class="col-tb-sec"><b>Pro version</b></br>RM 18.00 / Month</td>
+          <td class="col-tb-sec"><b>Free version</b></br>RM 00 / Month</td>
+        </tr>
+        <tr>
+          <td>Page creation</td>
+          <td class="col-tb-sec"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
+          <td class="col-tb-sec"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
+        </tr>
 
-          <tr>
-            <td>Creating a Bio (introduction)</td>
-            <td class="col-tb-sec"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
-            <td class="col-tb-sec"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
-          </tr>
+        <tr>
+          <td>Change profile picture</td>
+          <td class="col-tb-sec"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
+          <td class="col-tb-sec"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
+        </tr>
 
-          <tr>
-            <td>Access analysis</td>
-            <td class="col-tb-sec"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
-            <td class="col-tb-sec"></td>
-          </tr>
+        <tr>
+          <td>Creating a Bio (introduction)</td>
+          <td class="col-tb-sec"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
+          <td class="col-tb-sec"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
+        </tr>
 
-          <tr>
-            <td>Background customization</td>
-            <td class="col-tb-sec"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
-            <td class="col-tb-sec"></td>
-          </tr>
+        <tr>
+          <td>Access analysis</td>
+          <td class="col-tb-sec"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
+          <td class="col-tb-sec"></td>
+        </tr>
 
-          <tr>
-            <td>Customize social icons</td>
-            <td class="col-tb-sec"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
-            <td class="col-tb-sec"></td>
-          </tr>
+        <tr>
+          <td>Background customization</td>
+          <td class="col-tb-sec"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
+          <td class="col-tb-sec"></td>
+        </tr>
 
-          <tr>
-            <td>Change of shades</td>
-            <td class="col-tb-sec"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
-            <td class="col-tb-sec"></td>
-          </tr>
+        <tr>
+          <td>Customize social icons</td>
+          <td class="col-tb-sec"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
+          <td class="col-tb-sec"></td>
+        </tr>
 
-          <tr>
-            <td>Button customization</td>
-            <td class="col-tb-sec"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
-            <td class="col-tb-sec"></td>
-          </tr>
+        <tr>
+          <td>Change of shades</td>
+          <td class="col-tb-sec"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
+          <td class="col-tb-sec"></td>
+        </tr>
 
-          <tr>
-            <td></td>
-            <td class="col-tb-sec">
-                @guest
-                    <a href="{{ route('upgrade') }}" class="btn btn-danger btn-lg">Subscribe Now</a>
-                @endguest
-                @auth
-                    <a href="{{ route('upgrade') }}" class="btn btn-danger btn-lg">GO PRO</a>
-                @endauth
-            </td>
-            <td class="col-tb-sec">
-                <a href="{{ route('register') }}" class="btn btn-danger btn-lg">Free sign up</a>
-            </td>
-          </tr>
+        <tr>
+          <td>Button customization</td>
+          <td class="col-tb-sec"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
+          <td class="col-tb-sec"></td>
+        </tr>
 
-        </tbody>
-      </table>
+
+        <!-- <tr>
+          <td class="col-tb-sec col-xs-12 col-md-12">
+            <div class="hide">
+              @guest
+              <a href="{{ route('upgrade') }}" class="btn btn-danger btn-lg btn-block">
+                <w>Subscribe Now</w>
+              </a>
+              @endguest
+              @auth
+              <a href="{{ route('upgrade') }}" class="btn btn-danger btn-block col-xs-12 col-md-12">
+                <w>GO PRO</w>
+              </a>
+              @endauth
+            </div>
+          </td>
+          <td class="col-tb-sec">
+            <div class="hide">
+              <a href="{{ route('register') }}" class="btn btn-danger btn-block col-xs-12 col-md-8">
+                <w>Free sign upz</w>
+              </a>
+            </div>
+          </td>
+        </tr> -->
+      </tbody>
+    </table>
+
+    <div>
+      <div class="btn col-md-6" style="margin:-5px">&nbsp;</div>
+      <div class="btn btn-danger custom-button col-md-3">
+        @guest
+        <a href="{{ route('upgrade') }}" class="btn btn-danger btn-block ">
+          Subscribe Now
+        </a>
+        @endguest
+        @auth
+        <a href="{{ route('upgrade') }}" class="btn btn-danger btn-block">
+          GO PRO
+        </a>
+        @endauth
+      </div>
+      <div class="btn btn-danger custom-button col-md-3">
+        <a href="{{ route('register') }}" class="btn btn-danger btn-block">
+          Free sign up
+        </a>
+      </div>
     </div>
+  </div>
 
-    <div id="targetDiv"></div>
-    <div class="title-tag-line"><b></b><span>Student Benefit Program</span><b></b></div>
-    <div class="table-wrap tb-price">
-      <table class="table table-striped">
-        <!-- <thead>
+
+  <div id="targetDiv"></div>
+  <div class="title-tag-line"><b></b><span>Student Benefit Program</span><b></b></div>
+
+  <!-- <div class="col-md-12">
+  <h1>Student Benefit Program</h1>
+  </div> -->
+
+
+  <div class="table-wrap tb-price">
+    <table class="table table-striped">
+      <!-- <thead>
           <tr>
             <th></th>
             <th>Pro version</br>RM 18.00 / Month</th>
             <th>Free version</br>RM 00 / Month</th>
           </tr>
         </thead> -->
-        <tbody>
-          <tr>
-            <td></td>
-            <td class="col-tb-only sale_month"><b>RM9.90</b></br> / Month</br><span>RM 18.00 / Month</span></td>
-          </tr>
-          <tr>
-            <td>Page creation</td>
-            <td class="col-tb-only"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
-          </tr>
-          
-          <tr>
-            <td>Change profile picture</td>
-            <td class="col-tb-only"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
-          </tr>
+      <tbody>
+        <tr>
+          <td></td>
+          <td class="col-tb-only sale_month"><b>RM9.90</b></br> / Month</br><span>RM 18.00 / Month</span></td>
+        </tr>
+        <tr>
+          <td>Page creation</td>
+          <td class="col-tb-only"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
+        </tr>
 
-          <tr>
-            <td>Creating a Bio (introduction)</td>
-            <td class="col-tb-only"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
-          </tr>
+        <tr>
+          <td>Change profile picture</td>
+          <td class="col-tb-only"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
+        </tr>
 
-          <tr>
-            <td>Access analysis</td>
-            <td class="col-tb-only"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
-          </tr>
+        <tr>
+          <td>Creating a Bio (introduction)</td>
+          <td class="col-tb-only"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
+        </tr>
 
-          <tr>
-            <td>Background customization</td>
-            <td class="col-tb-only"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
-          </tr>
+        <tr>
+          <td>Access analysis</td>
+          <td class="col-tb-only"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
+        </tr>
 
-          <tr>
-            <td>Customize social icons</td>
-            <td class="col-tb-only"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
-          </tr>
+        <tr>
+          <td>Background customization</td>
+          <td class="col-tb-only"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
+        </tr>
 
-          <tr>
-            <td>Change of shades</td>
-            <td class="col-tb-only"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
-          </tr>
+        <tr>
+          <td>Customize social icons</td>
+          <td class="col-tb-only"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
+        </tr>
 
-          <tr>
-            <td>Button customization</td>
-            <td class="col-tb-only"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
-          </tr>
+        <tr>
+          <td>Change of shades</td>
+          <td class="col-tb-only"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
+        </tr>
 
-          <tr>
-            <td></td>
-            <td class="col-tb-sec">
-                @guest
-                    <a href="{{ route('upgrade', ['type' => 'student']) }}" class="btn btn-danger btn-lg">Subscribe Now</a>
-                @endguest
-                @auth
-                    <!-- <a href="{{ route('upgrade', ['type' => 'student']) }}" class="btn btn-danger btn-lg">GO PRO</a> -->
-                    <a href="{{ route('about', ['type' => 'student']) }}" class="btn btn-danger btn-lg">GO PRO</a>
-                @endauth
-            </td>
-          </tr>
+        <tr>
+          <td>Button customization</td>
+          <td class="col-tb-only"><img src="{{ url('assets/images/selected-price.png') }}" width="26" height="26"></td>
+        </tr>
 
-        </tbody>
-      </table>
-    </div>
+        <!-- <tr>
+          <td></td>
+          <td class="col-tb-sec">
+            @guest
+            <a href="{{ route('about', ['type' => 'student']) }}" class="btn btn-danger btn-lg">Subscribe Now</a>
+            @endguest
+            @auth
+            <a href="{{ route('about', ['type' => 'student']) }}" class="btn btn-danger btn-lg">GO PRO</a>
+            @endauth
+          </td>
+        </tr> -->
 
-    </div>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="btn col-md-7" style="margin:-30px">&nbsp;</div>
+  <div class="btn btn-danger custom-button col-md-3">
+    @guest
+    <a href="{{ route('about', ['type' => 'student']) }}" class="btn btn-danger">Subscribe Now</a>
+    @endguest
+    @auth
+    <a href="{{ route('about', ['type' => 'student']) }}" class="btn btn-danger">GO PRO</a>
+    @endauth
+  </div>
+
+</div>
 
 
-    <!-- / Students Benefit Program -->
+<!-- / Students Benefit Program -->
 @endsection

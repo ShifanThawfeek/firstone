@@ -3,7 +3,7 @@
         <v-layout row wrap justify-center class="mt-15">
             <v-flex xs11 md4 lg6 xl4>
                 <div id="form">
-                    <p class="cyan--text accent-3 text-center text-md-h4 text-sm-h5 text-h5" style="font-family: 'Rubik'!important">Register now, It's Free!</p>
+                    <p class="cyan--text accent-3 text-center text-md-h4 text-sm-h5 text-h5" style="font-family: 'Rubik'!important">Register now, It's Free!!!</p>
                     <v-alert type="info" indeterminate border="left" v-if="loading">Processing ...</v-alert>
                     <v-form v-model="valid" ref="form">
                         <errors :success="success" :failure="failure" :message="message"></errors>

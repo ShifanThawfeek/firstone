@@ -21,12 +21,12 @@ class CustomizationController extends Controller
     {
         $customization = Customization::where('user_id', auth()->id());
         $request['iconColor'] = $request['iconColor'] ?? '';
+        // $request['pageBackground'] = $request['pageBackground'] ?? '';//shifan added
         $customization->update($request->only([
             'fontSize', 
             'fontWeight', 
             'fontColor', 
             'fontColorHover', 
-            'pageBackground', 
             'buttonBackground', 
             'buttonBackgroundHover', 
             'buttonBorderSize', 
@@ -34,7 +34,10 @@ class CustomizationController extends Controller
             'buttonBorder', 
             'buttonBorderHover',
             'borderRadius',
-            'iconColor'
+            'pageBackground', 
+            'iconColor',
+            'usernameFontColor',
+            'theme_no'
         ]));
         return $customization->first();
     }
@@ -51,8 +54,10 @@ class CustomizationController extends Controller
             // Update the records
             $customization = Customization::where('user_id', auth()->id())->first();
             $customization->fill([
-                'pageBackground' => url(Storage::url('backgrounds/' . $name))
+                'pageBackground' => url(Storage::url('backgrounds/' . $name)) //in db pageBackground
             ])->save();
+
+            // console.log("I am from uplaod image function @ Cust.Contr");
         }
         return response(url(Storage::url('backgrounds/' . $name)));
         return Customization::where('user_id', auth()->id())->first();

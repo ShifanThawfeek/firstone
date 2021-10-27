@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
-    <link rel="icon" href="{{ url('assets/images/favicon.png') }}" />
+    <link rel="icon" href="{{ url('favicon.ico') }}" />
     <!-- Custom CSS -->
     <link href="{{ url('dashboard/plugins/bower_components/chartist/dist/chartist.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ url('dashboard/plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css') }}">
